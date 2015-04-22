@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'eagletmt/neco-ghc'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
