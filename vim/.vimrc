@@ -31,7 +31,7 @@ map <silent> <Leader>e :Errors<CR>
 map <Leader>s :SyntasticToggleMode<CR>
 
 "neco-ghc : Auto-complete with You Complete Me
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 let g:necoghc_enable_detailed_browse = 1 
 
 " Tab settings
