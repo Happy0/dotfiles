@@ -11,3 +11,4 @@ PS1='[\u@\h \W]\$ '
 export TERM=rxvt-unicode-256color
 
 PATH=$PATH:~/.cabal/bin
+setxkbmap -layout gb
