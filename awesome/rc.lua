@@ -219,6 +219,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
     awful.key({ modkey,           },  "F1",    function () awful.screen.focus(1) end),
     awful.key({ modkey,           },  "F2",    function () awful.screen.focus(2) end),
+    awful.key({ }, "XF86AudioRaiseVolume", function ()
+       awful.util.spawn("amixer set Master 9%+") end),
+    awful.key({ }, "XF86AudioLowerVolume", function ()
+       awful.util.spawn("amixer set Master 9%-") end),
 
     awful.key({ modkey,           }, "j",
         function ()
