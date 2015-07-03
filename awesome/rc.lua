@@ -217,6 +217,8 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
+    awful.key({ modkey,           },  "F1",    function () awful.screen.focus(1) end),
+    awful.key({ modkey,           },  "F2",    function () awful.screen.focus(2) end),
 
     awful.key({ modkey,           }, "j",
         function ()
