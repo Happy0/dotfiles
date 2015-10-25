@@ -12,3 +12,7 @@ export TERM=rxvt-unicode-256color
 
 PATH=$PATH:~/.cabal/bin
 setxkbmap -layout gb
+
+PATH=$PATH:/usr/lib/jvm/java-8-jdk/bin
+export JAVA_HOME=/usr/lib/jvm/java-8-jdk
+export JRE_HOME=/usr/lib/jvm/java-8-jdk/jre
