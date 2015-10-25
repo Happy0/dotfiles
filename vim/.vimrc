@@ -1,19 +1,24 @@
 set nocompatible
 syntax on
-filetype off
+filetype on
+set omnifunc=syntaxcomplete#Complete
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
+let $PATH = $PATH . ':' . expand("~/.cabal/bin")
 
 "Plugins
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bitc/vim-hdevtools'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
+Plugin 'Shougo/neocomplete'
 Plugin 'valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'rust-lang/rust.vim'
+Plugin 'pbrisbin/vim-syntax-shakespeare'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,9 +35,11 @@ let g:syntastic_auto_loc_list=1
 map <silent> <Leader>e :Errors<CR>
 map <Leader>s :SyntasticToggleMode<CR>
 
-"neco-ghc : Auto-complete with You Complete Me
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:neocomplete#enable_at_startup = 1
 let g:necoghc_enable_detailed_browse = 1 
+
+au FileType haskell set omnifunc=necoghc#omnifunc
 
 " Tab settings
 set tabstop=8
