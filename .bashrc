@@ -9,6 +9,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export TERM=rxvt-unicode-256color
+export BROWSER=/usr/bin/google-chrome-stable
 
 PATH=$PATH:~/.cabal/bin
 setxkbmap -layout gb
