@@ -19,6 +19,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'eagletmt/neco-ghc'
 Plugin 'rust-lang/rust.vim'
 Plugin 'pbrisbin/vim-syntax-shakespeare'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
