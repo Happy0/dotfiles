@@ -20,6 +20,10 @@ Plugin 'eagletmt/neco-ghc'
 Plugin 'rust-lang/rust.vim'
 Plugin 'pbrisbin/vim-syntax-shakespeare'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'Raimondi/delimitMate'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
