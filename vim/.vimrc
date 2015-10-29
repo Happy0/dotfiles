@@ -1,6 +1,6 @@
 set nocompatible
 syntax on
-filetype on
+filetype off
 set omnifunc=syntaxcomplete#Complete
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -27,6 +27,7 @@ Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 filetype plugin indent on
+filetype on
 
 "hdevtools configuration (Type signatures for haskell)
 au FileType haskell nnoremap <buffer> <F5> :HdevtoolsType<CR>
