@@ -1,5 +1,9 @@
 set nocompatible
 syntax on
+
+"Reload externally changed files
+set autoread
+
 filetype off
 set omnifunc=syntaxcomplete#Complete
 
@@ -43,7 +47,7 @@ map <Leader>s :SyntasticToggleMode<CR>
 
 let g:ycm_semantic_triggers = {'haskell' : ['.']}
 let g:neocomplete#enable_at_startup = 1
-let g:necoghc_enable_detailed_browse = 1 
+let g:necoghc_enable_detailed_browse = 1
 
 au FileType haskell set omnifunc=necoghc#omnifunc
 
@@ -53,3 +57,10 @@ set expandtab "Tabs to spaces
 set softtabstop=4 "Insert 4 spaces when tab is pressed
 set shiftwidth=4 "An indent is 4 spaces
 set shiftround " Round indent to nearest shiftwidth multiple
+
+" Remove trailing whitespace on save
+au BufWritePre * :%s/\s\+$//e
+au BufWritePre * :retab
+
+set list listchars=tab:»·,trail:·
+
