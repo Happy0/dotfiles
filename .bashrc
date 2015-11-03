@@ -17,3 +17,6 @@ setxkbmap -layout gb
 PATH=$PATH:/usr/lib/jvm/java-8-jdk/bin
 export JAVA_HOME=/usr/lib/jvm/java-8-jdk
 export JRE_HOME=/usr/lib/jvm/java-8-jdk/jre
+
+# My laptop system speaker beeps far too much when I'm using vim on the train :P
+/usr/bin/xset b off
