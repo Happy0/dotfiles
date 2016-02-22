@@ -9,7 +9,7 @@ urxvt*scrollBar:false
 urxvt*scrollBar_right:true
 urxvt*transpscrollbar:true
 urxvt*saveLines:50000
-URxvt*font: xft:Inconsolata:style=Semibold:pixelsize=14:antialias=true:hinting=slight
+URxvt*font: xft:Inconsolata:style=Semibold:pixelsize=12:antialias=true:hinting=slight
 URxvt.perl-ext: default,url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/google-chrome-stable -new-tab
