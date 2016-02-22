@@ -5,11 +5,11 @@ urxvt*transparent:true
 urxvt*shading:40
 urxvt*background:Black
 urxvt*foreground:White
-urxvt*scrollBar:true
+urxvt*scrollBar:false
 urxvt*scrollBar_right:true
 urxvt*transpscrollbar:true
 urxvt*saveLines:50000
-URxvt*font: xft:terminus:pixelsize=15
+URxvt*font: xft:terminus:pixelsize=17
 URxvt.perl-ext: default,url-select
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/google-chrome-stable -new-tab
