@@ -20,3 +20,5 @@ export JRE_HOME=/usr/lib/jvm/java-8-jdk/jre
 
 # My laptop system speaker beeps far too much when I'm using vim on the train :P
 /usr/bin/xset b off
+
+alias gus='git submodule update --init --recursive'
