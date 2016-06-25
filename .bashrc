@@ -25,3 +25,4 @@ load_python_env() {
     source /usr/bin/virtualenvwrapper.sh 
 }
 
+alias gus='git submodule update --init --recursive'
