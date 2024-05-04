@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
@@ -15,4 +17,4 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80"
-vim.g.leaderkey = " "
+
