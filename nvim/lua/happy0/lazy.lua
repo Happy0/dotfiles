@@ -38,5 +38,12 @@ require("lazy").setup({
   { 'hrsh7th/cmp-nvim-lsp' },
   { 'hrsh7th/nvim-cmp' },
   { 'L3MON4D3/LuaSnip' },
-  { 'nvim-tree/nvim-tree.lua',          version = "*",       lazy = false,                              dependencies = { "nvim-tree/nvim-web-devicons" } }
+  { 'nvim-tree/nvim-tree.lua',          version = "*",       lazy = false,                              dependencies = { "nvim-tree/nvim-web-devicons" } },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
+  }
 })
